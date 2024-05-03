@@ -1,15 +1,11 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿
+using System.Text;
 
-using System.Xml.Linq;
-var (a, b, opcion) = (2, 6, "-");
-var data = 2;
-var result = opcion switch
-{
-    "+" => a==b,
-    "-" => a>b,
-    "*" => a<b
-    
-};
-Console.WriteLine(result);
-
+var names = new StringBuilder("Alex Pagoada");
+//names[0] = 'a';
+names.AppendLine(" ");
+names.Append("Joel").Append(" ").Append("Orozco");
+//names.Capacity = 17;
+Console.WriteLine(names.ToString());
 Console.ReadLine();
+
