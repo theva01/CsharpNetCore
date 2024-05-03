@@ -1,0 +1,14 @@
+C:\Users\eva_01\source\repos\CursoNetCore\bin\Debug\net8.0\CursoNetCore.exe
+C:\Users\eva_01\source\repos\CursoNetCore\bin\Debug\net8.0\CursoNetCore.deps.json
+C:\Users\eva_01\source\repos\CursoNetCore\bin\Debug\net8.0\CursoNetCore.runtimeconfig.json
+C:\Users\eva_01\source\repos\CursoNetCore\bin\Debug\net8.0\CursoNetCore.dll
+C:\Users\eva_01\source\repos\CursoNetCore\bin\Debug\net8.0\CursoNetCore.pdb
+C:\Users\eva_01\source\repos\CursoNetCore\obj\Debug\net8.0\CursoNetCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\eva_01\source\repos\CursoNetCore\obj\Debug\net8.0\CursoNetCore.AssemblyInfoInputs.cache
+C:\Users\eva_01\source\repos\CursoNetCore\obj\Debug\net8.0\CursoNetCore.AssemblyInfo.cs
+C:\Users\eva_01\source\repos\CursoNetCore\obj\Debug\net8.0\CursoNetCore.csproj.CoreCompileInputs.cache
+C:\Users\eva_01\source\repos\CursoNetCore\obj\Debug\net8.0\CursoNetCore.dll
+C:\Users\eva_01\source\repos\CursoNetCore\obj\Debug\net8.0\refint\CursoNetCore.dll
+C:\Users\eva_01\source\repos\CursoNetCore\obj\Debug\net8.0\CursoNetCore.pdb
+C:\Users\eva_01\source\repos\CursoNetCore\obj\Debug\net8.0\CursoNetCore.genruntimeconfig.cache
+C:\Users\eva_01\source\repos\CursoNetCore\obj\Debug\net8.0\ref\CursoNetCore.dll
