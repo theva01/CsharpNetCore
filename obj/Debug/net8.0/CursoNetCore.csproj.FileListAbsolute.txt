@@ -12,3 +12,4 @@ C:\Users\eva_01\source\repos\CursoNetCore\obj\Debug\net8.0\refint\CursoNetCore.d
 C:\Users\eva_01\source\repos\CursoNetCore\obj\Debug\net8.0\CursoNetCore.pdb
 C:\Users\eva_01\source\repos\CursoNetCore\obj\Debug\net8.0\CursoNetCore.genruntimeconfig.cache
 C:\Users\eva_01\source\repos\CursoNetCore\obj\Debug\net8.0\ref\CursoNetCore.dll
+C:\Users\eva_01\source\repos\CursoNetCore\obj\Debug\net8.0\CursoNetCore.sourcelink.json
