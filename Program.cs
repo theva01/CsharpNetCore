@@ -3,42 +3,48 @@
 
     static void Main()
     {
-        //obtener que array esta duplicado
-
-        int[] array = { 1, 2, 2, 3, 6, 4, 4, 4, 9, 5, 6, 5, 9, 2 };
-        int[] list = new int[array.Length];
-        for (int i = 0; i < array.Length; i++)
+        int opcion, repetir = 0;
+        var con = new Conversor();
+        do 
         {
-            int count = 0;
-            for (int j = 0; j < array.Length; j++) 
-            { 
-                if (array[i] == array[j])
-                {
-                    count++;
-                    if (numero(array[i]))
-                    {
-                        list[i] = array[i];
-                    }
-                }
-            }
-            if (list[i] != 0)
+            Console.WriteLine("Escoja una de las opciones");
+            Console.WriteLine("1 - Convertir m/s a km/h");
+            Console.WriteLine("2 - Convertir km/h a m/s");
+            opcion = Convert.ToInt32(Console.ReadLine());
+            switch (opcion) 
             {
-                Console.WriteLine($"{list[i]} Se repite {count} Veces" );
+                case 1:
+                    con.Conversor1();
+                    break;
+                case 2:
+                    con.Conversor2();
+                    break;
+                default:
+                    Console.WriteLine("Opcion erronea");
+                    break;
             }
-        }
-        bool numero(int num)
-        {
-            for (int i = 0;i < list.Length;i++)
-            {
-                if (list[i] == num)
-                {
-                    return false;
-                }
-            }
-            return true;
-        }
+            Console.WriteLine("Si desea repetir coloque el valor de 1 o cualquier tecla para salir");
+            repetir = Convert.ToInt32(Console.ReadLine());
+        } while (repetir ==1);   
     }
 
+     class Conversor
+    {
+        
+        private double velocidad;
+        public void Conversor1()
+        {
+            Console.WriteLine("Ingrese una velocidad en M / S;");
+            velocidad = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine($"{velocidad * 3600 / 1000} KM/H");
+        }
+        public void Conversor2()
+        {
+            Console.WriteLine("Ingrese una velocidad en KM / H;");
+            velocidad = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine($"{velocidad * 1000 / 3600} M/S");
+        }
+    }
     
 
 
