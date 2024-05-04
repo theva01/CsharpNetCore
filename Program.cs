@@ -1,72 +1,45 @@
 ﻿class Program
 {
-    private String cadena; 
-    private String verMayusculas = "";
-    private String verMinusculas = "";
-    private int n;
-    private string[] Mayusculas;
-    private string[] Minusculas;
-    private string[] tempMy;
-    private string[] tempMn;
 
-    public Program(String cadena)
+    static void Main()
     {
-        this.cadena = cadena; 
-        n = cadena.Length;
-        Mayusculas = new string[n];
-        Minusculas = new string[n];
-        tempMy = new string[n];
-        tempMn = new string[n]; 
+        //obtener que array esta duplicado
+
+        int[] array = { 1, 2, 2, 3, 6, 4, 4, 4, 9, 5, 6, 5, 9, 2 };
+        int[] list = new int[array.Length];
+        for (int i = 0; i < array.Length; i++)
+        {
+            int count = 0;
+            for (int j = 0; j < array.Length; j++) 
+            { 
+                if (array[i] == array[j])
+                {
+                    count++;
+                    if (numero(array[i]))
+                    {
+                        list[i] = array[i];
+                    }
+                }
+            }
+            if (list[i] != 0)
+            {
+                Console.WriteLine($"{list[i]} Se repite {count} Veces" );
+            }
+        }
+        bool numero(int num)
+        {
+            for (int i = 0;i < list.Length;i++)
+            {
+                if (list[i] == num)
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
     }
+
     
-
-    public String mayusculas()
-    {
-        for (int i = 0; i < n; i++) 
-        {
-            if (Char.IsUpper(cadena[i]))
-            {
-                tempMy[i] = Convert.ToString(cadena[i]);
-            }
-        }
-        for (int i = 0;i < tempMy.Length; i++)
-        {
-            if (tempMy[i]  != null)
-            {
-                Mayusculas[i] = tempMy[i];
-                verMayusculas = $"{verMayusculas},{Mayusculas[i]}";
-            }
-        }
-        return verMayusculas;
-    }
-
-    public String minusculas()
-    {
-        for (int i = 0; i < n; i++)
-        {
-            if (Char.IsLower(cadena[i]))
-            {
-                tempMn[i] = Convert.ToString(cadena[i]);
-            }
-        }
-        for (int i = 0; i < tempMn.Length; i++)
-        {
-            if (tempMn[i] != null)
-            {
-                Minusculas[i] = tempMn[i];
-                verMinusculas = $"{verMinusculas},{Minusculas[i]}";
-            }
-        }
-        return verMinusculas;
-    }
-
-    static void Main() 
-    {
-        var cadenaRead = Console.ReadLine();
-        var data = new Program(cadenaRead);
-        Console.WriteLine($"Mayusculas:{data.mayusculas()} \n Minusculas: {data.minusculas()}");
-        Console.ReadLine();
-    }
 
 
     
